@@ -11,10 +11,12 @@
             overlay.style.background = 'rgba(0,0,0,.5)';
             overlay.style.cursor = 'pointer';
             
-//            SET SIZES
-
-            overlay.style.width = window.innerWidth + "px";
-            overlay.style.height = window.innerHeight + "px";
+            // set some the size
+            overlay.style.width = window.innerWidth + 'px';
+            overlay.style.height = window.innerHeight + 'px';
+            overlay.style.top = window.pageYOffset + 'px';
+            overlay.style.left = window.pageXOffset   + 'px';
+            
             
 //            APPENDING OVERLAY TO BODY
             document.body.appendChild(overlay);
@@ -39,28 +41,37 @@
                 if(overlay){
                     overlay.parentElement.removeChild(overlay);
                     
+                    
                 }
                 
             });
             
-//            IMG TO FOLLOW SCROLL
+//            OVERLAY TO FOLLOW SCROLL
             window.addEventListener('scroll', function(){
                 if(overlay){
+        
                     overlay.style.top = window.pageYOffset + 'px';
-                    overlay.style.left = window.pageXOffset + 'px';
+                    overlay.style.left = window.pageXOffset   + 'px';
+        
+        
                 }
             });
-
             
-            
-            
+//            OVERLAY TO ENCOMPASS WINDOW
+            window.addEventListener('resize', function(){
+                if(overlay){
+        
+                    overlay.style.width  = window.innerWidth + 'px';
+                    overlay.style.height = window.innerHeight + 'px';
+                    overlay.style.top    = window.pageYOffset + 'px';
+                    overlay.style.left   = window.pageXOffset   + 'px';
+        
+                }
+            });
+     
         };
    });
     
     
     
-    
-    
-    
-//  console.log("loaded");  
-}());
+    }());  //LOAD THE DOC FIRST
