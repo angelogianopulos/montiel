@@ -18,22 +18,18 @@
 
     <!-- Custom CSS -->
     <link href="css/half-slider.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/navbar.less">
 
 </head>
 
 <body>
-
-    <!-- Navigation -->
+ <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
+
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <audio controls>
-  <source src="horse.ogg" type="audio/ogg">
-  <source src="horse.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>x
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -43,7 +39,9 @@ Your browser does not support the audio element.
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
                 <ul class="nav navbar-nav">
+
                     <li>
                         <a href="#">Home</a>
                     </li>
@@ -56,6 +54,15 @@ Your browser does not support the audio element.
                     <li>
                         <a href="#">Fotos</a>
                     </li>
+                    <li>
+                       <div id="aud">
+                        <audio controls autoplay>
+                         <source src="assets/Tus Cartas.ogg" type="audio/ogg">
+                          <source src="assets/Tus Cartas.mp3" type="audio/mpeg">
+                        </audio>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
