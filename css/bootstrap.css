@@ -35,10 +35,19 @@ video {
   display: inline-block;
   vertical-align: baseline;
 }
-audio:not([controls]) {
-  display: none;
+.collapse audio{
   height: 0;
+ 
 }
+
+/*  ===============
+    AUDIO CLASS
+================*/
+
+#aud > audio {
+  float: right;
+}
+
 [hidden],
 template {
   display: none;
@@ -239,8 +248,11 @@ th {
   h3 {
     page-break-after: avoid;
   }
+
+
   .navbar {
     display: none;
+
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -4324,6 +4336,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav {
   margin: 7.5px -15px;
 }
+
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -4354,11 +4367,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
+    float: right!important;
     margin: 0;
   }
   .navbar-nav > li {
-    float: left;
+    float: right!important;
   }
   .navbar-nav > li > a {
     padding-top: 15px;
@@ -4483,7 +4496,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-left {
-    float: left !important;
+    float: right !important;
   }
   .navbar-right {
     float: right !important;
@@ -4572,6 +4585,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-link {
   color: #777;
+
 }
 .navbar-default .navbar-link:hover {
   color: #333;
@@ -4592,9 +4606,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse {
   background-color: #222;
   border-color: #080808;
+  float: right;
+
 }
+
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
+  float: right;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -4606,6 +4624,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-nav > li > a {
   color: #9d9d9d;
+  float: right;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
@@ -4637,6 +4656,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-color: #101010;
+  float: right!important;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
@@ -4674,6 +4694,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-link {
   color: #9d9d9d;
+   float: right;
 }
 .navbar-inverse .navbar-link:hover {
   color: #fff;
