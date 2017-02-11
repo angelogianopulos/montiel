@@ -1,3 +1,4 @@
+
 (function(){
     var carimages = document.querySelector('.carimages');
     carimages.addEventListener('click', function(e){
@@ -10,7 +11,6 @@
             overlay.style.top = 0;
             overlay.style.background = 'rgba(0,0,0,.5)';
             overlay.style.cursor = 'pointer';
-
             
             // set some the size
             overlay.style.width = window.innerWidth + 'px';
@@ -31,10 +31,12 @@
             
 //            IMG STYLE
             popImg.style.display = 'block';
-            popImg.style.width = '50%';
+            popImg.style.width = '35%';
             popImg.style.margin = '0 auto';
             popImg.style.marginTop = '10%';
-            popImg.style.border = 'thick solid white;
+            popImg.style.border = '10px solid #fff';
+            popImg.style.boxShadow = '10px 20px 30px rgba(0,0,0,.5)';
+
             
             overlay.appendChild(popImg);
             
