@@ -1,0 +1,158 @@
+.navbar-right {
+	padding-top: 9px;
+}
+
+
+
+
+.foot a:hover{
+	color: #959595;
+
+}
+
+#footer {
+    background: #353535;
+    position: relative;
+    z-index: 8000;
+}
+
+
+
+.footer-block.share {
+    background-color: #2e2e2e;
+}
+
+.footer-block.share {
+    overflow: hidden;
+    padding: 0px;
+    background-color: #2e2e2e;
+}
+
+#footer, .footer-row {
+    background-color: #000000;
+}
+
+.footer-block.share {
+    overflow: hidden;
+    padding: 0px;
+    background-color: #2e2e2e;
+}
+
+
+#footer .links-box {
+    padding: 20px 0px;
+    margin: 0 auto;
+    display: table;
+}
+
+.social-networks li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 4px;
+}
+
+.social-networks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+.footer-block .social-networks {
+    padding: 0px;
+    line-height: 50px;
+}
+
+.footer-block .social-networks a {
+    color: #fff;
+    font-size: large;
+    margin: 10px;
+}
+
+.footer-row {
+    overflow: hidden;
+    padding: 0px;
+    font-size: 11px;
+    line-height: 12px;
+    color: #fff;
+    background-color: #000;
+}
+
+
+
+.footer-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 21px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    max-width: 1144px;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 100px;
+}
+
+.footer-row .footer-logo-wrap {
+    float: left;
+    margin-right: 15px;
+}
+
+.footer-row img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 100px;
+}
+
+.footer-row .text.footer-copyright {
+    float: left;
+    padding: 0px;
+    position: relative;
+}
+
+.footer-row p, .footer-row h1, .footer-row h2, .footer-row h3, .footer-row h4, .footer-row h5, .footer-row h6 {
+    margin: 0;
+}
+
+.footer-row .text.footer-author {
+    float: right;
+    padding: 0px;
+    position: relative;
+}
+
+.footer-contact {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    background: #2e2e2e;
+    padding: 10px 20px;
+    transition: 0.35s;
+}
+
+
+
+.footer-contact a {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 767px){
+	#myCarousel {
+		display: none;
+	}
+	#galeria { margin-top: 80px;
+
+	}
+}
+

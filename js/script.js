@@ -1,6 +1,8 @@
 
 (function(){
     var carimages = document.querySelector('.carimages');
+   
+
     carimages.addEventListener('click', function(e){
         if(e.target.tagName === 'IMG'){
             var overlay = document.createElement('div');
@@ -11,12 +13,14 @@
             overlay.style.top = 0;
             overlay.style.background = 'rgba(0,0,0,.5)';
             overlay.style.cursor = 'pointer';
+
             
             // set some the size
             overlay.style.width = window.innerWidth + 'px';
             overlay.style.height = window.innerHeight + 'px';
             overlay.style.top = window.pageYOffset + 'px';
             overlay.style.left = window.pageXOffset   + 'px';
+
             
             
 //            APPENDING OVERLAY TO BODY

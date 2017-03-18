@@ -15,20 +15,44 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link href="css/half-slider.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/navbar.less">
+    <link rel="stylesheet" type="text/css" href="css/audio.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
 <body>
  <!-- Navigation -->
+
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
 
+
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -46,32 +70,31 @@
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">Acerca</a>
+                        <a class="page-scroll" href="#galeria">Fotos</a>
                     </li>
-                    <li>
-                        <a href="#">Música</a>
-                    </li>
-                    <li>
-                        <a href="#">Fotos</a>
-                    </li>
-                    <li>
-                       <div id="aud">
-                        <audio controls autoplay>
-                         <source src="assets/Tus Cartas.ogg" type="audio/ogg">
-                          <source src="assets/Tus Cartas.mp3" type="audio/mpeg">
-                        </audio>
-                      </div>
+                     <li>
+                        <a class="page-scroll" href="#redes">Social</a>
                     </li>
 
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                       <audio controls autoplay>
+                          <source src="assets/Tus Cartas.ogg" type="audio/ogg">
+                          <source src="assets/Tus Cartas.mp3" type="audio/mpeg">
+                        </audio>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
+
         <!-- /.container -->
     </nav>
 
     <!-- Half Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
+    
+      <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -96,7 +119,7 @@
                 <div class="fill" style="background-image:url('assets/slide2.jpg?raw=true');"></div>
                 
             </div>
-        </div>
+        
 
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -105,153 +128,204 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
-
-    </header>
+      </header>
+    </div>
 
     <!-- Page Content -->
     <div class="container">
     <div class="row">
             <div class="col-lg-12">
-                <h1>GALERÍA</h1>
+                <section id="galeria"><h1>GALERÍA</h1></section>
                 <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <code>MONTIEL</code>recently</p> -->
             </div>
         </div>
 
         <hr>
-        <div class="img-body">
-        <div class="container">
+    <div class="img-body">
+      <div class="container">
         <div class="carimages grid">
           <ul>
-           <div class="col-sm-3 col-md-4 col-lg-4 col-md-4 image grid-item">
+           <div class="col-sm-4 col-md-3 col-lg-3 image grid-item">
                <a href="#" class="thumbnail">
                    <img src="assets/montiel1.jpg" alt="" class="img-responsive">
                </a>
            </div>
-           <div class="col-sm-3 col-md-4 col-lg-4 col-md-4 image grid-item">
+           <div class="col-sm-4 col-md-3 col-lg-3 image grid-item">
                <a href="#" class="thumbnail">
                    <img src="assets/montiel2.jpg" alt="" class="img-responsive">
                </a>
            </div>
-           <div class="col-sm-3 col-md-4 col-lg-4 image grid-item">
+           <div class="col-sm-4 col-md-3 col-lg-3 image grid-item">
                <a href="#" class="thumbnail">
                    <img src="assets/montiel3.jpg" alt="" class="img-responsive">
                </a>
            </div>
-           <div class="col-sm-3 col-md-4 col-lg-4 image grid-item">
-               <a href="#" class="thumbnail">
+           <div class="col-sm-4 col-md-3 col-lg-3 image grid-item">
+              <a href="#" class="thumbnail">
                    <img src="assets/montiel4.jpg" alt="" class="img-responsive">
-               </a>
+              </a>
            </div>
-           <div class="col-sm-3 col-md-4 col-lg-4 image grid-item">
+           <div class="col-sm-4 col-md-3 col-lg-3 image grid-item">
                <a href="#" class="thumbnail">
                    <img src="assets/montiel5.jpg" alt="" class="img-responsive">
                </a>
            </div>
-           <div class="col-sm-3 col-md-4 col-lg-4 image grid-item">
+           <div class="col-sm-4 col-md-3 col-lg-3 image grid-item">
                <a href="#" class="thumbnail">
                    <img src="assets/montiel6.jpg" alt="" class="img-responsive">
                </a>
            </div>
-           <div class="col-sm-3 col-md-4 col-lg-4 image grid-item">
+           <div class="col-sm-4 col-md-3 col-lg-3 image grid-item">
                <a href="#" class="thumbnail">
                    <img src="assets/montiel7.jpg" alt="" class="img-responsive">
                </a>
            </div>
-           <div class="col-sm-3 col-md-4 col-lg-4 image grid-item">
+           <div class="col-sm-4 col-md-3 col-lg-3 image grid-item">
                <a href="#" class="thumbnail">
                    <img src="assets/montiel8.jpg" alt="" class="img-responsive">
                </a>
            </div>
-           <div class="col-sm-3 col-md-4 col-lg-4 image grid-item">
+           <div class="col-sm-4 col-md-3 col-lg-3 image grid-item">
                <a href="#" class="thumbnail">
                    <img src="assets/montiel9.jpg" alt="" class="img-responsive">
                </a>
            </div>
-           <div class="col-sm-3 col-md-4 col-lg-4 image grid-item">
+           <div class="col-sm-4 col-md-3 col-lg-3 image grid-item">
                <a href="#" class="thumbnail">
                    <img src="assets/montiel10.jpg" alt="" class="img-responsive">
                </a>
            </div>
-           <div class="col-sm-3 col-md-4 col-lg-4 image grid-item">
+           <div class="col-sm-4 col-md-3 col-lg-3 image grid-item">
                <a href="#" class="thumbnail">
                    <img src="assets/montiel11.jpg" alt="" class="img-responsive">
                </a>
            </div>
-           <div class="col-sm-3 col-md-4 col-lg-4 image grid-item">
+           <div class="col-sm-4 col-md-3 col-lg-3 image grid-item">
                <a href="#" class="thumbnail">
                    <img src="assets/montiel12.jpg" alt="" class="img-responsive">
                </a>
            </div>
             </ul>
         </div>   
-    </div>
+      </div>
     </div>
 
      <hr>
 <!-- Social media containers --> 
-
-         <div class="col-sm-4 col-lg-4 col-md-4">
+  <section class="social">
+          <div class="col-sm-4 col-lg-4 col-md-4" id="redes">
                         <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <button class="pull-right" href="#">Fallow</button>
-                                <h4><a href="#">Facebook</a>
+                            <img src="assets/fb.jpg" alt="">
+                              <div class="caption">
+                                <button class="pull-right" href="https://www.facebook.com/montielmx/">Follow</button>
+                                <h4><a href="https://www.facebook.com/montielmx/">Facebook</a>
                                 </h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s <a target="_blank" href="#">Lorem Ipsum is simply dummy</a>.</p>
-                            </div>
+                                <p>Me encanta la musica en todas las formas y colores, el arte bien hecho y todo lo que tenga que ver con la naturaleza, me encanta salir a disfrutar de todo lo que nos regala este mundo! Y cantarle al amor es mi mayor hobbie en el munddo mundial</p>
+                              </div>
                         </div>
-                    </div>
+          </div>
+
+          <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="assets/tw.jpg" alt="">
+                              <div class="caption">
+                                <button class="pull-right" href="https://twitter.com/montieloficial?lang=en">Follow</button>
+                                <h4><a href="https://twitter.com/montieloficial?lang=en">Twitter</a>
+                                </h4>
+                                <p>Me encanta la musica en todas las formas y colores, el arte bien hecho y todo lo que tenga que ver con la naturaleza, me encanta salir a disfrutar de todo lo que nos regala este mundo! Y cantarle al amor es mi mayor hobbie en el munddo mundial</p>
+                             </div>
+                        </div>
+          </div>
 
             <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <button class="pull-right" href="#">Fallow</button>
-                                <h4><a href="#">Twitter</a>
+                            <img src="assets/in.jpg" alt="">
+                              <div class="caption">
+                                <button class="pull-right" href="https://www.instagram.com/montieloficial">Follow</button>
+                                <h4><a href="https://www.instagram.com/montieloficial">Instagram</a>
                                 </h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s <a target="_blank" href="#">Lorem Ipsum is simply dummy</a>.</p>
-                            </div>
+                                <p>Me encanta la musica en todas las formas y colores, el arte bien hecho y todo lo que tenga que ver con la naturaleza, me encanta salir a disfrutar de todo lo que nos regala este mundo! Y cantarle al amor es mi mayor hobbie en el munddo mundial</p>
+                              </div>
                         </div>
-                    </div>
-        <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <button class="pull-right" href="#">Fallow</button>
-                                <h4><a href="#">Instagram</a>
-                                </h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s <a target="_blank" href="#">Lorem Ipsum is simply dummy</a>.</p>
-                            </div>
-                        </div>
-                    </div>
-            
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div id="footer">
-                    <p>Copyright &copy; <a href="http://www.pixeldigidesign.com">pixeldigidesign.com 2014</p></a>
-                </div>
             </div>
-            <!-- /.row -->
-        </footer>
-
     </div>
+  </section>  
+
+<div class="container">   
+  <footer id="footer">
+      <!-- Footer -->
+        <div class="footer-block share">
+        <!-- links-box -->
+          <div class="links-box">
+        
+  <!-- social-networks -->
+  <ul class="social-networks">
+  
+    <li>
+      <a target="_blank" href="https://www.facebook.com/montielmx/">
+         <i class="fa fa-facebook" title="Facebook"></i>
+       </a>
+    </li>
+
+    
+    <li>
+      <a target="_blank" href="https://twitter.com/montieloficial?lang=en">
+        <i class="fa fa-twitter" title="Twitter"></i>
+      </a>
+    </li>
+
+    
+    <li>
+      <a target="_blank" href="https://www.youtube.com/channel/UCmq5Y2EROtWBFY1dRCnf49Q">
+        <i class="fa fa-youtube-play" title="You Tube"></i>
+       </a>
+    </li>
+
+    
+    <li>
+      <a target="_blank" href="https://www.instagram.com/montieloficial">
+        <i class="fa fa-instagram" title="Instagram"></i>
+        </a>
+    </li>
+  </ul>
+  
+       </div>
+      </div>
+  </footer> 
+
+  <div class="footer-row">
+        <div class="footer-wrapper">
+          <a class="footer-logo-wrap" style="pointer-events:none;" href=""><img src="assets/logo_footer.png" alt=""></a>
+          <div class="text footer-copyright" style="top: 13px;"><p>© 2016&nbsp;Montiel Music<br>
+          All rights reserved</p>
+          </div>
+          <div class="footer-contact"><a href="mailto:mgonzalez.corp@gmail.com">Contacto</a></div>
+          <div class="text footer-author" style="top: 13px;"><p>&nbsp;</p>
+        <p>produced by <b><a href="http://www.pixeldigidesign.com" target="_blank">Pixel Digidesign</a>&nbsp;</b> | designed and developed by <b><a href="http://www.pixeldigidesign.com" target="_blank">Pixel Digidesign</a>&nbsp;</b></p>
+        </div>
+          <div class="clear"></div>
+      </div>
+    </div>
+</div> 
+
+<!-- footer row -->
+
+
     <!-- /.container -->
     <script src="https://code.jquery.com/jquery-3.1.1.js"
     integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script>
-
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script>
+ -->
     <!--    MASONRY INIT-->
-    <script>
+    <!-- <script>
         $('.img-body').masonry({
             itemSelector: '.image',
             isAnimated: true,
             isFitWidth: true,
             
         });
-    </script>
+    </script> -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

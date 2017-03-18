@@ -32,7 +32,7 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block;
+  display: none;
   vertical-align: baseline;
 }
 .collapse audio{
